@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'App\Http\Controllers\PagesController@getIndex');
-
 Route::get('/about', 'App\Http\Controllers\PagesController@getAbout');
-
 Route::get('contact', 'App\Http\Controllers\PagesController@getContact');
+Route::resource('posts', '\App\Http\Controllers\PostController');
